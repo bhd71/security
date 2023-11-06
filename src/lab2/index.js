@@ -1,4 +1,4 @@
-calculateRandomNumber = () => Number(((Math.random() * 10).toFixed(0)) + (Math.random() * 10).toFixed(0))
+const calculateRandomNumber = () => Number(((Math.random() * 10).toFixed(0)) + (Math.random() * 10).toFixed(0))
 const preTable = [{letter: 'А', popularity: 3},
     {letter: 'Б', popularity: 1},
     {letter: 'В', popularity: 2},
@@ -111,7 +111,6 @@ function encrypt(arr) {
         const randomValueOfArray = getRandomIndexOfArrayDependOnLength(letter.numbers.length)
         return accum += letter.numbers[randomValueOfArray]
     }, '')
-
 
 }
 
