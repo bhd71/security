@@ -36,9 +36,9 @@ const alphabet = [
 
 
 
-const mySentence = 'лнуСосати'
+const mySentence = 'прикладнаматематика'
 const mySentenceArr = Array.from(mySentence)
-const testvalue = 'ЛьвівськаПолітехнікаТакаЖЗалупень'
+const testvalue = 'ЛьвівськаПолітехнікаТаІнститутПрикладноїМатематики'
 
 function encrypt(text) {
     const textArr = Array.from(text)
@@ -55,7 +55,7 @@ function encrypt(text) {
         const resultIndex = getResultIndexForEncrypt(indexOfInputLetter, indexOfLetterFromMySentence)
         res.push(getLetterFromAlphabet(resultIndex))
     }
-    
+
     return res.join('')
 }
 
@@ -81,8 +81,9 @@ function decrypt(inputText) {
 
 
 const encryptedText = encrypt(testvalue)
-
-console.log(decrypt(encryptedText))
+console.log('Оригінальний текст: ' + testvalue)
+console.log('Зашифрований текст: ' + encryptedText)
+console.log('Дешифрований текст: ' + decrypt(encryptedText))
 
 function getIndexFromAlphabet(letter) {
         return alphabet.find(el=> el.letter.toLowerCase() === letter.toLowerCase()).index

@@ -184,11 +184,6 @@ console.log(decrypt(encryptedText))
 
 
 
-
-
-
-
-
 function encrypt(inputText) {
     inputText = inputText.split('')
 
